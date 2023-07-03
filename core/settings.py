@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bloodbank',
     'doctors',
+    'appointments',
     'rest_framework',
     'corsheaders',
     'rest_framework.authtoken',

@@ -9,4 +9,4 @@ class Patients(models.Model):
     patient_doctor = models.ForeignKey(Doctors, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.patient_first_name
+         return str(self.patient_id)
