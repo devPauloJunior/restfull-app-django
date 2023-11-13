@@ -8,6 +8,7 @@ class Appointments(models.Model):
     appointments_patient = models.ForeignKey(Patients, on_delete=models.CASCADE)
     appointments_title = models.CharField(max_length=60)
     appointments_desc = models.CharField(max_length=150)
+    appointments_date = models.DateField(null=False)
 
     def __str__(self):
         return str(self.appointments_id)
